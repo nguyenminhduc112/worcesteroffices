@@ -1,0 +1,145 @@
+/* =================== Layout  ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Info */
+#header #header__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    font-family: "Trebuchet MS", Sans-serif;
+}
+
+
+#header #header__info .info__contact__phone,
+#footer .info__contact__phone {
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 5px;
+    font-family: "Trebuchet MS", Sans-serif;
+}
+
+#header #header__info .btn__wordOrder {
+    display: inline-block;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    background-color: #118baf;
+    color: white;
+    font-size: 13px;
+    font-family: "Trebuchet MS", Sans-serif;
+}
+
+/* Header Menu */
+#header #header__menu .mainMenu {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    font-family: "Trebuchet MS", Sans-serif;
+}
+
+#header #header__menu .mainMenu__link {
+    display: inline-block;
+    color: white !important;
+    padding: 13px 20px;
+    font-family: "Trebuchet MS", Sans-serif;
+}
+
+#header #header__menu .mainMenu__link:hover,
+#header #header__menu .mainMenu__link.active {
+    text-decoration: none;
+    color: #118baf !important;
+}
+
+/* Footer */
+#footer {
+    border-top: 0.5px solid #54595f;
+}
+
+#footer .info__contact__address {
+    font-size: 14px;
+    color: #54595f;
+    font-family: "Trebuchet MS", Sans-serif;
+    margin-bottom: 45px;
+}
+
+#footer .button {
+    display: block;
+    margin: 20px 0px;
+    font-family: "Trebuchet MS", Sans-serif;
+    font-weight: 500;
+    fill: #54595f;
+    color: #54595f;
+}
+
+#footer .button:hover {
+    text-decoration: none;
+    color: #118baf;
+}
+
+#footer .info_contact__fb,
+#footer .info_contact__twitter,
+#footer .info_contact__google {
+    display: inline-block;
+    background-color: #118baf;
+    color: white;
+    font-size: 20px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #54595f;
+}
+
+#header__menu_responsive {
+    display: none;
+}
+
+#header__menu_responsive .mainMenu {
+    padding: 0px;
+    list-style-type: none;
+}
+
+#header__menu_responsive .mainMenu .mainMenu__link {
+    color: #54595f;
+    display: block;
+    padding: 10px 10px;
+
+}
+
+
+#header__menu_responsive .mainMenu .mainMenu__link.active {
+    background-color: #118baf;
+    color: white;
+}
+
+/* @Media */
+@media only screen and (max-width: 768px) {
+    #header #header__info {
+        flex-direction: column;
+    }
+
+    #header #header__info .info__contact {
+        /* background-color: #F0F5F9; */
+        margin-bottom: 30px;
+        order: 1;
+    }
+
+    #header #header__info .img__logo {
+        display: none;
+        order: 2;
+    }
+
+    #header #header__menu {
+        display: none;
+    }
+
+    #header__menu_responsive {
+        display: block;
+    }
+}
